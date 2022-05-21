@@ -3,8 +3,7 @@ Computer Vision model for livestream frame people counter. Using OpenCV, YOLO5  
 YOLO5 used the COCO image dataset for training its model 
 
 Logic:
-The OpenCV library used to get the livestream features cameras; the livestream is passed frame by frame to the YOLOv5 model for object detection. 
-If the image contains a ‘person’, the people counter is updated. Total number of people in the image is printed at the end.
+The OpenCV library is used to get the livestream of images from the camera. The livestream is passed frame by frame to the YOLOv5 model for object detection. If the image contains a ‘person’, the people counter is updated. Total number of people in the image is printed at the end.
 
 Results:
 The model performs well in controlled environment, with close range images, proper lighting, etc. 100% accuracy. 
@@ -23,5 +22,12 @@ Overall its a good model and easy to use with pytorch.
 Using better camera or other models like SSD can improve the overall accuracy
 
 The code can be extended to perform object detection on a variety of object categories (80 in COCO) and use the livestream instead of just frames.
+Links below for libraries and installation
 
+https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html
+https://pytorch.org/hub/ultralytics_yolov5/
+https://ultralytics.com/
+https://cocodataset.org/#home
+https://www.mrdbourke.com/setup-apple-m1-pro-and-m1-max-for-machine-learning-and-data-science/
+https://blog.roboflow.com/m1-opencv/
 
